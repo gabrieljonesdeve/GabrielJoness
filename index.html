@@ -5,82 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gabriel Jones</title>
     <style>
-        /* Aggiungi uno stile per rendere le immagini responsive */
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        /* Modifica il contenuto per renderlo flessibile */
-        content {
-            margin: 20px;
+        /* Correzioni grammaticali e stili aggiuntivi per rendere la pagina responsive */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
             padding: 0;
-            width: 100%;
             box-sizing: border-box;
         }
 
-        /* Modifica la struttura della tabella per renderla responsive */
-        .table-container {
-            overflow-x: auto;
-        }
-
-        table {
-            border-collapse: collapse;
-            width: 100%;
-        }
-
-        td {
-            border: 1px solid #FFFFFF;
-            padding: 8px;
-            word-wrap: break-word;
-        }
-
-        /* Modifica la struttura del footer per renderlo responsive */
-        footer {
+        .miur-bar {
             background-color: #582C2B;
             color: #fff;
-            padding: 10px 20px;
+            padding: 10px;
+            font-size: 14px;
             display: flex;
-            flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
         }
 
-        footer p {
+        .miur-bar a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .miur-bar a:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            background-color: #88353A;
+            color: #fff;
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header h1 {
             margin: 0;
-            flex: 1 0 100%;
-            text-align: center;
-        }
-
-        .footer-text {
-            font-size: 12px;             
-            font-weight: bold;
-            margin: 10px 0;
-            flex: 1 0 100%;
-            text-align: center;
-        }
-
-        /* Aggiungi stili per il layout della navigazione */
-        nav {
-            flex: 1 0 100%;
-            text-align: center;
-            margin-top: 10px;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
         }
 
         nav ul {
             list-style-type: none;
             padding: 0;
             margin: 0;
-            display: inline-flex;
-            justify-content: center;
         }
 
         nav ul li {
+            display: inline;
             margin-right: 20px;
-        }
-
-        nav ul li:last-child {
-            margin-right: 0;
         }
 
         nav ul li a {
@@ -88,20 +65,25 @@
             text-decoration: none;
         }
 
-        header {
-            background-color: #88353A;
+        .main-content {
+            padding: 20px;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #582C2B;
             color: #fff;
-            padding: 10px 20px;
+            padding: 10px 0;
+            width: 100%;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            flex-wrap: wrap;
+            position: relative;
         }
 
-        header h1 {
+        footer p {
             margin: 0;
-            font-size: 24px;
-            font-family: 'Comfortaa', cursive; /* Aggiunto il font Comfortaa */
         }
 
         #logo {
@@ -110,75 +92,114 @@
             margin-right: 10px;
         }
 
-        /* Aggiunta regola per il font Comfortaa */
-        body {
-            font-family: 'Comfortaa', cursive;
+        .footer-text {
+            font-size: 12px;
+            font-weight: bold;
+            margin-left: 20px;
+        }
+
+        /* Stili per rendere la tabella responsive */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid #FFFFFF;
+            padding: 10px;
+        }
+
+        td img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        td h1 {
+            font-size: 18px;
+            margin-top: 0;
+        }
+
+        td p {
+            margin-bottom: 10px;
+        }
+
+        td li {
+            margin-top: 10px;
+        }
+
+        /* Stili per i link nel contenuto */
+        content a {
+            color: #88353A;
+            text-decoration: none;
+        }
+
+        content a:hover {
+            text-decoration: underline;
         }
     </style>
-    <!-- Collegamento al font Comfortaa -->
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="miur-bar">
-        <div>
-            <a href="https://www.gabbycentral.it/home">Sito appartenente al gruppo di siti GabbyCentral</a>
-        </div>
-        <div>
-            <a href="https://gabbystudios.github.io/Pagina-Globale/">Pagina Globale</a>
-        </div>
+<div class="miur-bar">
+    <div>
+        <a href="https://www.gabbycentral.it/home">Sito appartenente al gruppo di siti GabbyCentral</a>
     </div>
+    <div>
+        <a href="https://gabbystudios.github.io/Pagina-Globale/">Pagina Globale</a>
+    </div>
+</div>
 
-    <header>
-        <div class="container">
-            <h1>
-                <img id="logo" src="https://gabrielsystem.altervista.org/wp-content/uploads/2024/03/icona-1.png" alt="Logo GabbyCentral">
-                Gabriel Jones
-            </h1>
+<header>
+    <div class="container">
+        <h1>
+            <img id="logo" src="https://gabrielsystem.altervista.org/wp-content/uploads/2024/03/icona-1.png" alt="Logo GabbyCentral">
+            Gabriel Jones
+        </h1>
 
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="https://github.com/GabbyStudios/Pagina-Globale">Pagina Globale</a></li>
-                    <li><a href="https://gabrielsystem.altervista.org">Gabriel System</a></li>
-                    <li><a href="https://github.com/GabbyStudios/GabrielJones"><img id="logo" src="https://gabrielsystem.altervista.org/wp-content/uploads/2024/03/Logo1.png" alt="Logo GabbyCentral"></a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    
-    <content>
-        <div class="table-container">
-            <table>
-                <tr>
-                    <td><img src="met.png" alt="Immagine di me"></td>
-                    <td> <h1> Chi sono? </h1>
-                        <p> Conosciuto come onlygabby, il mio nome è Gabriel, sono un nerd, sono esperto nella formazione di pagine statiche e blog, sono un amante del coding, certo, ogni tanto mi fa un po' sclerare, ma comunque io mi diverto, è una passione, con la formazione di siti web mi piace soprattutto la parte in HTML e meno la parte in CSS, comunque sto imparando un po' tutto da zero, mi interessano molti linguaggi di programmazione (html, css, lua e PHP), attualmente sto lavorando nella formazione di siti web in html e css su github!</p>
-                        <li><a href="Biografia.html">Leggi di più</a></li>
-                    </td>
-                </tr>
-            </table>
-        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="https://github.com/GabbyStudios/Pagina-Globale">Pagina Globale</a></li>
+                <li><a href="https://gabrielsystem.altervista.org">Gabriel System</a></li>
+                <li><a href="https://github.com/GabbyStudios/developer"><img id="logo" src="https://gabrielsystem.altervista.org/wp-content/uploads/2024/03/Logo1.png" alt="Logo GabbyCentral"></a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
+<content>
+    <table>
+        <tr>
+            <td><img src="met.png" alt="Immagine di me"></td>
+            <td>
+                <h1>Chi sono?</h1>
+                <p>Conosciuto come onlygabby, il mio nome è Gabriel. Sono nato l'11 giugno 2008, ho un cane e amo l'informatica.</p>
+                <li><a href="Biografia.html">Leggi di più</a></li>
+            </td>
+        </tr>
+    </table>
+
+    <div class="main-content">
         <h1>Il mio blog</h1>
-        <p>Io sì, ho un blog su Tumblr. È un social un po' vecchio, ma valido. Lì io ospito il mio blog, poiché amo scrivere. Come sono felice! Finalmente la gente potrà vedere le mie scritture. Io non ho tante visualizzazioni, ecc... ma per me il fatto che siano già pubbliche è qualcosa...</p>
+        <p>Ho un blog su Tumblr, è un social un po' vecchio ma valido. Lì ospito il mio blog perché amo scrivere. Sono felice che finalmente la gente possa vedere le mie scritture, anche se non ho molte visualizzazioni. Per me il fatto che siano già pubbliche è qualcosa...</p>
         <li><a href="https://gabbyupdates.tumblr.com/">Accedi subito al sito</a></li>
 
         <h1>GabbyUpdates</h1>
-        <p>Io sì, ho un sito degli aggiornamenti...</p>
+        <p>Ho un sito degli aggiornamenti...</p>
         <li><a href="https://gabbysrealm.tumblr.com/">Accedi subito al blog</a></li>
 
-        <h1> Accesso al codice </h1>
-        <p> Puoi accedere tranquillamente al codice dall'URL da qui  </p>
+        <h1>Accesso al codice</h1>
+        <p>Puoi accedere tranquillamente al codice dall'URL da qui.</p>
         <li><a href="https://github.com/GabbyStudios/Gjones">Gabriel Jones GitHub page</a></li>
-    </content>
+    </div>
+</content>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 GC-SS. Tutti i diritti riservati.</p>
-        </div>
-        <div class="container footer-text">
-            <p>Powered by GC-SS (Gabby Central Server Services)</p>
-        </div>
-    </footer>
+<footer>
+    <div class="container">
+        <p>&copy; 2024 GC-SS. Tutti i diritti riservati.</p>
+    </div>
+    <div class="container footer-text">
+        <p>Powered by GC-SS (Gabby Central Server Services)</p>
+    </div>
+</footer>
 </body>
 </html>
