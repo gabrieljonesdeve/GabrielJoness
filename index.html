@@ -5,84 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gabriel Jones</title>
     <style>
-	
+        /* Aggiungere uno stile per rendere le immagini responsive */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
 
+        /* Modificare il contenuto per renderlo flessibile */
+        content {
+            margin: 20px;
+            padding: 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
 
-	
+        /* Modificare la struttura della tabella per renderla responsive */
+        .table-container {
+            overflow-x: auto;
+        }
+
         table {
             border-collapse: collapse;
+            width: 100%;
         }
 
         td {
-            border: 60px solid #FFFFFF;
+            border: 1px solid #FFFFFF;
+            padding: 8px;
+            word-wrap: break-word;
         }
 
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-
-        content {
-            font-family: Arial, sans-serif;
-            margin: 20;
-            padding: 0;
-        }
-
-        .miur-bar {
+        /* Modificare la struttura del footer per renderlo responsive */
+        footer {
             background-color: #582C2B;
             color: #fff;
-            padding: 10px;
+            padding: 10px 20px;
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
-            font-size: 14px;
         }
 
-        .miur-bar a {
-            color: #fff;
-            text-decoration: none;
-            margin-right: 20px;
+        footer p {
+            margin: 0;
+            flex: 1 0 100%;
+            text-align: center;
         }
 
-        .miur-bar a:hover {
-            text-decoration: underline;
-        }
-	    .footer-text {
-    font-size: 12px;             
-    font-weight: bold;
-    margin-left: 50px;
-    margin-right: 100px;
-    margin-bottom: 20px; /* Aggiunge uno spazio di 20 pixel sotto il footer */
-}
-
-
-        header {
-            background-color: #88353A;
-            color: #fff;
-            padding: 10px 0;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+        .footer-text {
+            font-size: 12px;             
+            font-weight: bold;
+            margin: 10px 0;
+            flex: 1 0 100%;
+            text-align: center;
         }
 
-        header h1 {
-            margin: 0 0 0 0.25mm; /* Spaziatura di 0,25mm a sinistra del logo */
-            display: flex;
-            align-items: center;
-            font-size: 24px;
+        /* Aggiungere stili per il layout della navigazione */
+        nav {
+            flex: 1 0 100%;
+            text-align: center;
+            margin-top: 10px;
         }
 
         nav ul {
             list-style-type: none;
             padding: 0;
             margin: 0;
+            display: inline-flex;
+            justify-content: center;
         }
 
         nav ul li {
-            display: inline;
             margin-right: 20px;
+        }
+
+        nav ul li:last-child {
+            margin-right: 0;
         }
 
         nav ul li a {
@@ -90,43 +88,20 @@
             text-decoration: none;
         }
 
-        /* Stili per la tabella */
-        table {
-            border-collapse: collapse;
-        }
-
-        td {
-            border: 1px solid #FFFFFF;
-        }
-
-        body {
-            margin: 0;
-            padding: 0;
-        }
-        content {
-            margin: 20;
-            padding: 0;
-        }
-
-        .main-content {
-            padding: 50px 0;
-            background-color: #f5f5f5;
-            text-align: center;
-        }
-
-        footer {
-            background-color: #582C2B;
+        header {
+            background-color: #88353A;
             color: #fff;
-            padding: 10px 0;
-            width: 100%;
+            padding: 10px 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            position: relative;
+            flex-wrap: wrap;
         }
 
-        footer p {
-            margin: 1000000;
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+            font-family: 'Comfortaa', cursive; /* Aggiunto il font Comfortaa */
         }
 
         #logo {
@@ -135,14 +110,13 @@
             margin-right: 10px;
         }
 
-        .footer-text {
-            font-size: 12px;             
-		font-weight: bold;
-            margin-left: 50;
-            margin: 100;
-
+        /* Aggiunta regola per il font Comfortaa */
+        body {
+            font-family: 'Comfortaa', cursive;
         }
     </style>
+    <!-- Collegamento al font Comfortaa -->
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="miur-bar">
@@ -167,39 +141,36 @@
                     <li><a href="https://github.com/GabbyStudios/Pagina-Globale">Pagina Globale</a></li>
                     <li><a href="https://gabrielsystem.altervista.org">Gabriel System</a></li>
                     <li><a href="https://github.com/GabbyStudios/developer"><img id="logo" src="https://gabrielsystem.altervista.org/wp-content/uploads/2024/03/Logo1.png" alt="Logo GabbyCentral"></a></li>
-
-
                 </ul>
             </nav>
         </div>
     </header>
-		<content>
-    <table>
-        <tr>
-            <td style="word-wrap: break-word;"><img src="met.png" alt="Immagine di me"></td>
-            <td style="word-wrap: break-word;"> <h1> Chi sono? </h1>
-        <p> Conosciuto come onlygabby il mio nome è gabriel, sono nato l'11 giugno 2008, ho un cane ed amo l'informatica </p>
-        <li><a href="Biografia.html">Leggi di più</a></li></td>
-        </tr>
-    </table>
+    
+    <content>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <td><img src="met.png" alt="Immagine di me"></td>
+                    <td> <h1> Chi sono? </h1>
+                        <p> Conosciuto come onlygabby, il mio nome è Gabriel. Sono nato l'11 giugno 2008, ho un cane e amo l'informatica. </p>
+                        <li><a href="Biografia.html">Leggi di più</a></li>
+                    </td>
+                </tr>
+            </table>
+        </div>
 
-
-	<h1>Il mio blog</h1>
-	<p>Io si, ho un blog, su tumblr, è un social un po' vecchio, ma valido, li io hosto il mio blog, in quando io amo scrivere, come sono felice! finalmente la gente potrà vedere le miei scritture, io non oh tante visualizzazioni ecc... ma per me il fatto che siano già pubbliche è qualcosa...</p>
+        <h1>Il mio blog</h1>
+        <p>Io sì, ho un blog su Tumblr. È un social un po' vecchio, ma valido. Lì io ospito il mio blog, poiché amo scrivere. Come sono felice! Finalmente la gente potrà vedere le mie scritture. Io non ho tante visualizzazioni, ecc... ma per me il fatto che siano già pubbliche è qualcosa...</p>
         <li><a href="https://gabbyupdates.tumblr.com/">Accedi subito al sito</a></li>
 
-
-
-	<h1>GabbyUpdates</h1>
-	<p>Io si, ho un sito degli aggiornamenti...</p>
+        <h1>GabbyUpdates</h1>
+        <p>Io sì, ho un sito degli aggiornamenti...</p>
         <li><a href="https://gabbysrealm.tumblr.com/">Accedi subito al blog</a></li>
-
-
 
         <h1> Accesso al codice </h1>
         <p> Puoi accedere tranquillamente al codice dall'URL da qui  </p>
         <li><a href="https://github.com/GabbyStudios/Gjones">Gabriel Jones GitHub page</a></li>
-		</content>
+    </content>
 
     <footer>
         <div class="container">
